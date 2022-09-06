@@ -8,7 +8,7 @@
  Under examples folder you can find sample example to integrate this package.
 
  ## List all tickets
- import(
+ "`import(
     "fmt"
 	"log"
 	"os"
@@ -39,10 +39,10 @@
  for _, value := range resp {
      fmt.Print(value.ID, value.Subject)
      fmt.Print("\n")
- }
+ }`"
 
  ## Create Ticket
- import (
+ "`import (
 	"log"
 	"os"
 
@@ -79,7 +79,7 @@
 
  if _, err := client.Tickets().Create(ticket); err != nil {
      log.Fatalf("failed to create ticket: %s", err)
- }
+ }`"
 
 # Future Scope
  - Organization/Company

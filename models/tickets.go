@@ -112,4 +112,10 @@ type Ticket struct {
 
 	// Company ID of the requester. This attribute can only be set if the Multiple Companies feature is enabled (Estate plan and above)
 	CompanyID uint64 `json:"company_id,omitempty"`
+
+	// Created Date
+	CreatedAt time.Time `json:"created_at,omitempty"`
+
+	// Updated Date
+	UpdatedAt time.Time `json:"updated_at,omitempty"`
 }

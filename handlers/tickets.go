@@ -65,7 +65,7 @@ func (c *TicketsClient) View(id uint64) (*Ticket, error) {
 
 // List All Tickets
 func (c *TicketsClient) ListAll() ([]*Ticket, error) {
-	req, err := c.client.freshDeskRequest("GET", "tickets", nil)
+	req, err := c.client.freshDeskRequest("GET", "tickets?include=description", nil)
 	if err != nil {
 		return nil, err
 	}

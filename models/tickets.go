@@ -71,6 +71,9 @@ type Ticket struct {
 	// HTML content of the ticket.
 	Description string `json:"description"`
 
+	// Plain text content of the ticket
+	DescriptionText string `json:"description_text,omitempty"`
+
 	// ID of the agent to whom the ticket has been assigned
 	ResponderID uint64 `json:"responder_id"`
 

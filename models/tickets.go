@@ -63,7 +63,7 @@ type Ticket struct {
 	Type string `json:"type"`
 
 	// Status of the ticket. The default Value is 2.
-	Status Status `json:"status"`
+	Status Status `json:"status,omitempty"`
 
 	// Priority of the ticket. The default value is 1.
 	Priority Priority `json:"priority"`

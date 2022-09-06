@@ -32,7 +32,7 @@ func CreateTicket() {
 		Subject:     "Ticket Title3",
 		Name:        "Ticket Title1",
 		Type:        "Incident",
-		Email:       "bjp232004@gmail.com",
+		Email:       "fakeemail@noreply.com",
 		Description: "this is a sample ticket",
 	}
 

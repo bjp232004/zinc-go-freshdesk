@@ -49,8 +49,8 @@
 	"log"
 	"os"
 
- 	"github.com/bjp232004/zinc-go-freshdesk/handlers"
- 	"github.com/joho/godotenv"
+    "github.com/bjp232004/zinc-go-freshdesk/handlers"
+    "github.com/joho/godotenv"
  )
 
  err := godotenv.Load("./examples/local.env")

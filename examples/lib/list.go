@@ -10,7 +10,7 @@ import (
 )
 
 func ListTickets() {
-	err := godotenv.Load("./cmd/local.env")
+	err := godotenv.Load("./examples/local.env")
 	if err != nil {
 		log.Fatalf("Some error occured. Err: %s", err)
 	}

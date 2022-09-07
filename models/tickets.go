@@ -115,8 +115,8 @@ type Ticket struct {
 	CompanyID uint64 `json:"company_id,omitempty"`
 
 	// Created Date
-	// CreatedAt time.Time `json:"created_at,omitempty"`
+	CreatedAt string `json:"created_at,omitempty"`
 
 	// Updated Date
-	// UpdatedAt time.Time `json:"updated_at,omitempty"`
+	UpdatedAt string `json:"updated_at,omitempty"`
 }

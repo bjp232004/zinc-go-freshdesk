@@ -1,7 +1,5 @@
 package models
 
-import "time"
-
 type Source uint8
 
 const (
@@ -63,7 +61,7 @@ type Ticket struct {
 	Type string `json:"type"`
 
 	// Status of the ticket. The default Value is 2.
-	Status Status `json:"status,omitempty"`
+	Status Status `json:"status"`
 
 	// Priority of the ticket. The default value is 1.
 	Priority Priority `json:"priority"`
@@ -92,14 +90,14 @@ type Ticket struct {
 	CustomFields map[string]interface{} `json:"custom_fields,omitempty"`
 
 	// Timestamp that denotes when the ticket is due to be resolved
-	DueBy time.Time `json:"due_by,omitempty"`
+	// DueBy time.Time `json:"due_by,omitempty"`
 
 	// ID of email config which is used for this ticket. (i.e., support@yourcompany.com/sales@yourcompany.com)
 	// If product_id is given and email_config_id is not given, product's primary email_config_id will be set
 	EmailConfigID uint64 `json:"email_config_id,omitempty"`
 
 	// Timestamp that denotes when the first response is due
-	FirstResponseDueBy time.Time `json:"fr_due_by,omitempty"`
+	// FirstResponseDueBy time.Time `json:"fr_due_by,omitempty"`
 
 	// ID of the group to which the ticket has been assigned. The default value is the ID of the group that is associated with the given email_config_id
 	GroupID uint64 `json:"group_id,omitempty"`
@@ -117,8 +115,8 @@ type Ticket struct {
 	CompanyID uint64 `json:"company_id,omitempty"`
 
 	// Created Date
-	CreatedAt time.Time `json:"created_at,omitempty"`
+	// CreatedAt time.Time `json:"created_at,omitempty"`
 
 	// Updated Date
-	UpdatedAt time.Time `json:"updated_at,omitempty"`
+	// UpdatedAt time.Time `json:"updated_at,omitempty"`
 }
